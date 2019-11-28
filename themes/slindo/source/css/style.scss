@@ -1,3 +1,146 @@
-* {
+@font-face {
+    font-family: 'overpass';
+    src: url('/fonts/overpass/overpass-regular-webfont.woff2') format('woff2'),
+         url('/fonts/overpass/overpass-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url('/fonts/overpass/overpass-italic-webfont.woff2') format('woff2'),
+         url('/fonts/overpass/overpass-italic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url('/fonts/overpass/overpass-semibold-webfont.woff2') format('woff2'),
+         url('/fonts/overpass/overpass-semibold-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url('/fonts/overpass/overpass-semibold-italic-webfont.woff2') format('woff2'),
+         url('/fonts/overpass/overpass-semibold-italic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url('/fonts/overpass/overpass-bold-italic-webfont.woff2') format('woff2'),
+         url('/fonts/overpass/overpass-bold-italic-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url('/fonts/overpass/overpass-bold-webfont.woff2') format('woff2'),
+         url('/fonts/overpass/overpass-bold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+html {
+
+    --c-font:#2A2722;
+    --c-blue:#4759B3;
+
+    --border-radius: 4px;
+
+    --c-darkgrey: #26231E;
+    --c-middlegrey: #66625C;
+    --c-grey: #CCC9C4;
+
+    --c-background: #FFF;
+    --c-background-light: #FAF9F7;
+    --c-hover-grey: #F5F3F0;
+    --c-greyed-out: #99938A;
+
+    --shadow-overlay: 0 4px 0 -2px rgba(0, 0, 0, .05), 0 3px 6px rgba(0, 0, 0, .1);
+    --shadow-box: 0 1px 1px rgba(0, 0, 0, .05), 0 2px 3px rgba(0, 0, 0, .1);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:overpass, sans-serif;
+	background:var(--c-background);
+    color:var(--c-darkgrey);
+    font-size:14px;
+}
+
+*, *:before, *:after {
+	box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
+    outline:none;
+}
+
+a {
+	color: var(--c-blue);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
 	
+}
+
+article {
+	padding:24px;
+	margin:0 auto;
+	max-width: 648px;
+}
+
+article p {
+	font-size:16.5px;
+	line-height:30px;
+	margin:0 0 24px 0;
+}
+
+h1, h2 {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 0 24px 0;
+    padding: 0;
+    font-weight: 600;
+    color:var(--c-font);
+}
+
+@media (min-width: 800px) {
+    h1, h2 {
+        font-size: 25px;
+    }
+}
+
+.article-date {
+	color:var(--c-grey);
+}
+
+#main-header {
+	margin:0 auto;
+	max-width: 648px;
+	text-align:center;
+	padding:24px;
+}
+
+#main-header h1 {
+	margin:0;
 }
