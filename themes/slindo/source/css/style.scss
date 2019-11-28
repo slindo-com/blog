@@ -100,7 +100,7 @@ a:hover {
 }
 
 a:visited {
-	
+	color: var(--c-blue);
 }
 
 article {
@@ -143,4 +143,23 @@ h1, h2 {
 
 #main-header h1 {
 	margin:0;
+}
+
+figure {
+	margin:12px auto 24px auto;
+	padding:0;
+	text-align: center;
+	max-width: 100%;
+
+	img {
+		margin:0 auto;
+		display:block;
+		max-width: 100%;
+	}
+
+	figcaption {
+		font-size:11.5px;
+		line-height: 18px;
+
+	}
 }
