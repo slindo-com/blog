@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://slindo.blog
+url: https://slindo.blog
 root: /
 permalink: :title/
 permalink_defaults:
@@ -90,7 +90,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: slindo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

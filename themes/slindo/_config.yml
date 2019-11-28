@@ -9,7 +9,7 @@ excerpt_link: Read More
 fancybox: true
 
 # Sidebar
-sidebar: right
+sidebar: false
 widgets:
 - category
 - tag
@@ -35,3 +35,9 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+# sass
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false

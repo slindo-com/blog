@@ -1,0 +1,31 @@
+<article>
+
+  <div>
+    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+    <%- partial('post/category') %>
+  </div>
+
+  <div>
+    <%- partial('post/gallery') %>
+
+    <% if (post.link || post.title){ %>
+      <header class="article-header">
+        <%- partial('post/title', {class_name: 'article-title'}) %>
+      </header>
+    <% } %>
+
+    <div>
+        <%- post.content %>
+    </div>
+
+    <!--<footer class="article-footer">
+      <%- partial('post/tag') %>
+    </footer>-->
+
+  </div>
+
+  <% if (!index){ %>
+    <%- partial('post/nav') %>
+  <% } %>
+
+</article>
